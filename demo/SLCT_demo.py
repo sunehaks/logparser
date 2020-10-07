@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-import sys
-sys.path.append('../')
-from logparser import SLCT
-
-input_dir  = '../logs/HDFS/'  # The input directory of log file
+import sys,os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from logparser.SLCT import SLCT
+print((dir(SLCT)))
+input_dir  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/logs/HDFS/'  # The input directory of log file
 output_dir = 'SLCT_result/'  # The output directory of parsing results
 log_file   = 'HDFS_2k.log'  # The input log file name
 log_format = '<Date> <Time> <Pid> <Level> <Component>: <Content>'  # HDFS log format

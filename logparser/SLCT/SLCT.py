@@ -4,15 +4,16 @@ Author: LogPAI team
 License: MIT
 """
 import sys
+import os
 sys.path.append('../')
-
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import hashlib
 import pandas as pd
 import re
 from datetime import datetime
 from ..logmatch import regexmatch
 import subprocess
-import os
 
 
 class LogParser(object):
@@ -41,8 +42,8 @@ def SLCT(para, log_format, rex):
     # SLCT compilation
     if not os.path.isfile('../SLCT/slct'):
         try:
-            print('Compile SLCT...\n>> gcc -o ../logparser/SLCT/slct -O2 ../logparser/SLCT/cslct.c')
-            subprocess.check_output('gcc -o ../logparser/SLCT/slct -O2 ../logparser/SLCT/cslct.c', 
+            print('Compile SLCT...\n>> gcc -o '+os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/SLCT/slct -O2 '+os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/SLCT/cslct.c')
+            subprocess.check_output('gcc -o '+os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/SLCT/slct -O2 '+os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/SLCT/cslct.c', 
                 stderr=subprocess.STDOUT, shell=True)
         except:
             print("Compile error! Please check GCC installed.\n")
@@ -103,9 +104,9 @@ def extract_command(para, logname):
     input = ''
 
     if parajTF:
-        input = '../logparser/SLCT/slct -j -o ' + 'slct_outliers.log -r -s ' + str(support) + ' ' + logname
+        input = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/SLCT/slct -j -o ' + 'slct_outliers.log -r -s ' + str(support) + ' ' + logname
     else:
-        input = '../logparser/SLCT/slct -o ' + 'slct_outliers.log -r -s ' + str(support) + ' ' + logname
+        input = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/SLCT/slct -o ' + 'slct_outliers.log -r -s ' + str(support) + ' ' + logname
     return input
 
 def log_to_dataframe(log_file, regex, headers, logformat):
@@ -135,7 +136,7 @@ def generate_logformat_regex(logformat):
     regex = ''
     for k in range(len(splitters)):
         if k % 2 == 0:
-            splitter = re.sub(' +', '\s+', splitters[k])
+            splitter = re.sub(' +', r'\\s+', splitters[k])
             regex += splitter
         else:
             header = splitters[k].strip('<').strip('>')
