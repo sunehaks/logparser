@@ -1,0 +1,111 @@
+Mon Jun 09 14:41:26 2014
+DISTRIB TRAN FCR.bc5d0574.54.18.1038528
+  is local tran 54.18.1038528 (hex=36.12.fd8c0)
+  insert pending committed tran, scn=196294231275 (hex=2d.b40c44eb)
+Mon Jun 09 14:41:27 2014
+DISTRIB TRAN FCR.bc5d0574.54.18.1038528
+  is local tran 54.18.1038528 (hex=36.12.fd8c0))
+  delete pending committed tran, scn=196294231275 (hex=2d.b40c44eb)
+Mon Jun 09 14:42:32 2014
+DISTRIB TRAN FCR.bc5d0574.37.23.1773445
+  is local tran 37.23.1773445 (hex=25.17.1b0f85)
+  insert pending committed tran, scn=196294324926 (hex=2d.b40db2be)
+Mon Jun 09 14:42:32 2014
+DISTRIB TRAN FCR.bc5d0574.37.23.1773445
+  is local tran 37.23.1773445 (hex=25.17.1b0f85))
+  delete pending committed tran, scn=196294324926 (hex=2d.b40db2be)
+DISTRIB TRAN FCR.bc5d0574.68.5.673697
+  is local tran 68.5.673697 (hex=44.05.a47a1)
+  insert pending committed tran, scn=196294328170 (hex=2d.b40dbf6a)
+DISTRIB TRAN FCR.bc5d0574.68.5.673697
+  is local tran 68.5.673697 (hex=44.05.a47a1))
+  delete pending committed tran, scn=196294328170 (hex=2d.b40dbf6a)
+DISTRIB TRAN FCR.bc5d0574.33.25.2214463
+  is local tran 33.25.2214463 (hex=21.19.21ca3f)
+  insert pending committed tran, scn=196294328380 (hex=2d.b40dc03c)
+DISTRIB TRAN FCR.bc5d0574.33.25.2214463
+  is local tran 33.25.2214463 (hex=21.19.21ca3f))
+  delete pending committed tran, scn=196294328380 (hex=2d.b40dc03c)
+DISTRIB TRAN FCR.bc5d0574.38.21.1786634
+  is local tran 38.21.1786634 (hex=26.15.1b430a)
+  insert pending committed tran, scn=196294328684 (hex=2d.b40dc16c)
+DISTRIB TRAN FCR.bc5d0574.38.21.1786634
+  is local tran 38.21.1786634 (hex=26.15.1b430a))
+  delete pending committed tran, scn=196294328684 (hex=2d.b40dc16c)
+Mon Jun 09 14:43:56 2014
+Thread 1 advanced to log sequence 25674 (LGWR switch)
+  Current log# 2 seq# 25674 mem# 0: +DATA_FCR01/fcr/onlinelog/group_2.1038.838384469
+  Current log# 2 seq# 25674 mem# 1: +FRA_FCR01/fcr/onlinelog/group_2.3176.838384473
+Mon Jun 09 14:44:01 2014
+Archived Log entry 3386855 added for thread 1 sequence 25673 ID 0x5386fe53 dest 1:
+Archived Log entry 3386856 added for thread 1 sequence 25673 ID 0x5386fe53 dest 3:
+Mon Jun 09 14:54:46 2014
+Thread 1 advanced to log sequence 25675 (LGWR switch)
+  Current log# 3 seq# 25675 mem# 0: +DATA_FCR01/fcr/onlinelog/group_3.1039.838384475
+  Current log# 3 seq# 25675 mem# 1: +FRA_FCR01/fcr/onlinelog/group_3.3175.838384481
+Mon Jun 09 14:54:51 2014
+Archived Log entry 3386859 added for thread 1 sequence 25674 ID 0x5386fe53 dest 1:
+Archived Log entry 3386860 added for thread 1 sequence 25674 ID 0x5386fe53 dest 3:
+Mon Jun 09 15:05:19 2014
+Thread 1 advanced to log sequence 25676 (LGWR switch)
+  Current log# 4 seq# 25676 mem# 0: +DATA_FCR01/fcr/onlinelog/group_4.1040.838384483
+  Current log# 4 seq# 25676 mem# 1: +FRA_FCR01/fcr/onlinelog/group_4.3174.838384487
+Mon Jun 09 15:05:25 2014
+Archived Log entry 3386861 added for thread 1 sequence 25675 ID 0x5386fe53 dest 1:
+Archived Log entry 3386862 added for thread 1 sequence 25675 ID 0x5386fe53 dest 3:
+Mon Jun 09 15:15:25 2014
+Thread 1 advanced to log sequence 25677 (LGWR switch)
+  Current log# 5 seq# 25677 mem# 0: +DATA_FCR01/fcr/onlinelog/group_5.1042.838384489
+  Current log# 5 seq# 25677 mem# 1: +FRA_FCR01/fcr/onlinelog/group_5.3173.838384493
+Mon Jun 09 15:15:29 2014
+Archived Log entry 3386865 added for thread 1 sequence 25676 ID 0x5386fe53 dest 1:
+Archived Log entry 3386866 added for thread 1 sequence 25676 ID 0x5386fe53 dest 3:
+Mon Jun 09 15:22:59 2014
+Thread 1 advanced to log sequence 25678 (LGWR switch)
+  Current log# 6 seq# 25678 mem# 0: +DATA_FCR01/fcr/onlinelog/group_6.1017.838384497
+  Current log# 6 seq# 25678 mem# 1: +FRA_FCR01/fcr/onlinelog/group_6.3172.838384501
+Mon Jun 09 15:23:04 2014
+Archived Log entry 3386867 added for thread 1 sequence 25677 ID 0x5386fe53 dest 1:
+Archived Log entry 3386868 added for thread 1 sequence 25677 ID 0x5386fe53 dest 3:
+Mon Jun 09 15:32:36 2014
+Thread 1 advanced to log sequence 25679 (LGWR switch)
+  Current log# 1 seq# 25679 mem# 0: +DATA_FCR01/fcr/onlinelog/group_1.1037.838384463
+  Current log# 1 seq# 25679 mem# 1: +FRA_FCR01/fcr/onlinelog/group_1.3177.838384467
+Mon Jun 09 15:32:40 2014
+Archived Log entry 3386871 added for thread 1 sequence 25678 ID 0x5386fe53 dest 1:
+Archived Log entry 3386872 added for thread 1 sequence 25678 ID 0x5386fe53 dest 3:
+Mon Jun 09 15:35:38 2014
+ALTER SYSTEM ARCHIVE LOG
+Mon Jun 09 15:35:38 2014
+Thread 1 advanced to log sequence 25680 (LGWR switch)
+  Current log# 2 seq# 25680 mem# 0: +DATA_FCR01/fcr/onlinelog/group_2.1038.838384469
+  Current log# 2 seq# 25680 mem# 1: +FRA_FCR01/fcr/onlinelog/group_2.3176.838384473
+Archived Log entry 3386873 added for thread 1 sequence 25679 ID 0x5386fe53 dest 1:
+Archived Log entry 3386874 added for thread 1 sequence 25679 ID 0x5386fe53 dest 3:
+Mon Jun 09 15:37:16 2014
+
+
+***********************************************************************
+
+Fatal NI connect error 12547, connecting to:
+ (LOCAL=NO)
+
+  VERSION INFORMATION:
+	TNS for IBM/AIX RISC System/6000: Version 11.2.0.4.0 - Production
+	TCP/IP NT Protocol Adapter for IBM/AIX RISC System/6000: Version 11.2.0.4.0 - Production
+	Oracle Bequeath NT Protocol Adapter for IBM/AIX RISC System/6000: Version 11.2.0.4.0 - Production
+  Time: 09-JUN-2014 15:37:16
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12547
+    
+TNS-12547: TNS:lost contact
+    ns secondary err code: 12560
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+opiodr aborting process unknown ospid (38273140) as a result of ORA-609
+Mon Jun 09 15:37:49 2014
+
+
+***********************************************************************

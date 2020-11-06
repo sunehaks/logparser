@@ -1,0 +1,88 @@
+list phl-deny denied 0 10.39.12.0 -> 0.0.0.0, 9 packets
+Route 203.200.213.96/28 stuck-in-active state in EIGRP-IPv4:(465) 2.  Cleaning up
+EIGRP-IPv4:(465) 2: Neighbor 192.168.20.34 (GigabitEthernet2/45) is down: stuck in active
+EIGRP-IPv4 2: Neighbor 192.168.20.33 (GigabitEthernet1/0/3) is down: Interface PEER-TERMINATION received
+EIGRP-IPv4:(465) 2: Neighbor 192.168.20.34 (GigabitEthernet2/45) is up: new adjacency
+Route 198.181.235.0/24 stuck-in-active state in EIGRP-IPv4:(503) 2.  Cleaning up
+Route 198.181.235.0/24 stuck-in-active state in base 2.  Cleaning up
+Route 198.181.235.0/24 stuck-in-active state in EIGRP-IPv4:(465) 2.  Cleaning up
+EIGRP-IPv4:(503) 2: Neighbor 192.168.20.9 (GigabitEthernet1/7) is down: stuck in active
+EIGRP-IPv4:(503) 2: Neighbor 10.241.240.22 (Vlan1) is down: Interface PEER-TERMINATION received
+EIGRP-IPv4 2: Neighbor 192.168.20.10 (GigabitEthernet0/0/3) is down: Interface PEER-TERMINATION received
+EIGRP-IPv4:(465) 2: Neighbor 10.241.240.11 (Vlan1) is down: stuck in active
+EIGRP-IPv4:(465) 2: Neighbor 192.168.20.241 (GigabitEthernet3/35) is down: Interface PEER-TERMINATION received
+EIGRP-IPv4:(465) 2: Neighbor 192.168.20.241 (GigabitEthernet3/35) is up: new adjacency
+EIGRP-IPv4 2: Neighbor 192.168.20.242 (GigabitEthernet0/0/3) is down: stuck in active
+EIGRP-IPv4:(465) 2: Neighbor 10.241.240.11 (Vlan1) is up: new adjacency
+EIGRP-IPv4:(503) 2: Neighbor 10.241.240.22 (Vlan1) is up: new adjacency
+EIGRP-IPv4:(503) 2: Neighbor 192.168.20.9 (GigabitEthernet1/7) is up: new adjacency
+Unexpected message type has arrived. Terminating the connection from 10.94.21.158
+Route 10.1.1.200/30 stuck-in-active state in base 2.  Cleaning up
+EIGRP-IPv4 2: Neighbor 192.168.20.205 (GigabitEthernet2/47) is down: Interface PEER-TERMINATION received
+EIGRP-IPv4 2: Neighbor 192.168.20.206 (TenGigabitEthernet1/5/14) is down: stuck in active
+Still timeleft for watching failures is 17 secs, [user: ] [Source: 10.50.228.150] [localport: 22] [Reason: Login Authentication Failed] [ACL: 99] at 09:11:05 UTC Thu Jun 2 2016
+Still timeleft for watching failures is 0 secs, [user: ] [Source: 10.50.228.150] [localport: 22] [Reason: Login Authentication Failed] [ACL: 99] at 09:11:27 UTC Thu Jun 2 2016
+EIGRP-IPv4 2: Neighbor 192.168.20.73 (GigabitEthernet1/48) is down: holding time expired
+holding time expired
+new adjacency
+Consistency Checker found inconsistency.
+61517
+STANDBY:2 wcm:  Detected backward time shift. Last: 1464871214.382256. --> Now:1464871214.381985.   (Estonia-Core-S1-2)
+Client e09d.3124.a25c had 2 AES-CCMP TSC replays
+IP address 10.241.241.36 is moved from MAC address b8:ac:6f:87:f5:17  to MAC address b8:ac:6f:87:f5:19 .
+IP address 10.241.241.36 is moved from MAC address b8:ac:6f:87:f5:19  to MAC address b8:ac:6f:87:f5:17 .
+IP address 10.241.241.36 is moved from MAC address b8:ac:6f:87:f5:17  to MAC address b8:ac:6f:87:f5:19 .
+IP address 10.241.241.36 is moved from MAC address b8:ac:6f:87:f5:19  to MAC address b8:ac:6f:87:f5:17 .
+Host 60:67:20:03:38:E8 in vlan 216 is moving from port Fa6/48 to port Po1
+IP address 10.241.241.36 is moved from MAC address b8:ac:6f:87:f5:17  to MAC address b8:ac:6f:87:f5:19 .
+IP address 10.241.241.36 is moved from MAC address b8:ac:6f:87:f5:19  to MAC address b8:ac:6f:87:f5:17 .
+Controller port error, Interface Gi2/0/47: Power Controller reports power Imax error detected (Pune-Stack-S2-2)
+Login failed [user: dprasa1] [Source: 10.94.21.46] [localport: 22] [Reason: Login Authentication Failed] at 10:32:02 EDT Thu Jun 2 2016
+Host F0:27:65:81:E7:1D in vlan 216 is moving from port Fa6/48 to port Po1
+Host 8C:70:5A:95:75:AC in vlan 216 is moving from port Fa6/48 to port Po1
+(Suppressed 3 times)Packet received with invalid source MAC address (77:B7:50:77:87:67) on port Gi1/3 in vlan 82
+DHCP address conflict:  server pinged 10.85.100.47.
+Host 80:65:6D:2F:1D:B9 in vlan 100 is moving from port Po1 to port Fa6/48
+Host 80:65:6D:2F:1D:B9 in vlan 100 is moving from port Fa6/48 to port Po1
+Host 4C:34:88:0E:DC:29 in vlan 216 is moving from port Fa6/48 to port Po1
+sent to neighbor 10.245.31.245 6/4 (Administrative Reset) 0 bytes
+neighbor 10.245.31.245 IPv4 Unicast topology base removed from session  User reset
+Unexpected message type has arrived. Terminating the connection from 10.112.21.75
+Login failed [user: degjavat] [Source: 10.87.6.168] [localport: 22] [Reason: Login Authentication Failed] at 17:09:05 UTC Thu Jun 2 2016
+Tried to get more bytes than in SSH Buffer
+Interface Ethernet101/1/7 is admin up .
+Interface Ethernet101/1/7 is admin up .
+Interface Ethernet101/1/7, operational speed changed to 1 Gbps
+Interface Ethernet101/1/7, operational speed changed to 1 Gbps
+Interface Ethernet101/1/7, counters cleared by user
+Host 8C:70:5A:95:75:AC in vlan 100 is moving from port Po1 to port Fa6/48
+STANDBY:2 wcm:  Detected backward time shift. Last: 1464890316.575015. --> Now:1464890316.573972.   (China-Dalian-Core-S1-2)
+Power given, but Power Controller does not report Power Good (FEX-116)
+Power given, but Power Controller does not report Power Good (FEX-116)
+Power given, but Power Controller does not report Power Good (FEX-116)
+Too few working fans in fan tray, the chassis will overheat. If not resolved, in 4 minutes 0 seconds all line cards will be placed into Reset-Mode
+A fan or thermistor/s in system fan tray have failed
+EIGRP-IPv4:(524) 2: Neighbor 192.168.20.13 (GigabitEthernet4/44) is up: new adjacency
+Power given, but Power Controller does not report Power Good (FEX-116)
+EIGRP-IPv4:(524) 2: Neighbor 192.168.20.13 (GigabitEthernet4/44) is down: holding time expired
+EIGRP-IPv4 2: Neighbor 192.168.20.14 (TenGigabitEthernet2/5/15) is down: holding time expired
+EIGRP-IPv4:(524) 2: Neighbor 192.168.20.13 (GigabitEthernet4/44) is up: new adjacency
+Stack Port 2 Switch 1 has changed to state DOWN
+Stack Port 2 Switch 1 has changed to state UP
+STANDBY:2 wcm:  Detected backward time shift. Last: 1464940756.813876. --> Now:1464940756.811970.   (Pune-Core-S1-2)
+Stack Port 2 Switch 1 has changed to state DOWN
+Stack Port 2 Switch 1 has changed to state UP
+EIGRP-IPv4 1: Neighbor 192.168.145.106 (GigabitEthernet1/0/1) is up: new adjacency
+EIGRP-IPv4 1: Neighbor 192.168.145.105 (GigabitEthernet0/0/2) is up: new adjacency
+Login failed [user: degjavat] [Source: 10.87.6.168] [localport: 22] [Reason: Login Authentication Failed] at 04:40:21 EDT Fri Jun 3 2016
+Still timeleft for watching failures is 2 secs, [user: ] [Source: 10.50.228.150] [localport: 22] [Reason: Login Authentication Failed] [ACL: 99] at 09:10:49 UTC Fri Jun 3 2016
+Still timeleft for watching failures is 0 secs, [user: ] [Source: 10.50.228.150] [localport: 22] [Reason: Login Authentication Failed] [ACL: 99] at 09:10:51 UTC Fri Jun 3 2016
+EIGRP-IPv4 2: Neighbor 192.168.20.249 (GigabitEthernet1/0/1) is down: Interface PEER-TERMINATION received
+123 ip sla 10 reachability Up -> Down
+123 ip sla 10 reachability Down -> Up
+STANDBY:2 wcm:  Detected backward time shift. Last: 1464946874.463407. --> Now:1464946874.461986.   (Estonia-Core-S1-2)
+Host 5C:E0:C5:9D:7A:F1 in vlan 216 is moving from port Fa6/48 to port Po1
+Route 42.156.190.244/32 stuck-in-active state in EIGRP-IPv4:(465) 2.  Cleaning up
+EIGRP-IPv4:(465) 2: Neighbor 192.168.20.226 (GigabitEthernet2/46) is down: stuck in active
+EIGRP-IPv4:(465) 2: Neighbor 192.168.20.226 (GigabitEthernet2/46) is up: new adjacency
+EIGRP-IPv4 2: Neighbor 192.168.20.225 (GigabitEthernet1/0/1) is down: Interface PEER-TERMINATION received

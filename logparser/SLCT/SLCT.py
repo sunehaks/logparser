@@ -11,6 +11,7 @@ print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import hashlib
 import pandas as pd
 import re
+#import regex as re
 from datetime import datetime
 from ..logmatch import regexmatch
 import subprocess
@@ -113,8 +114,9 @@ def log_to_dataframe(log_file, regex, headers, logformat):
     ''' Function to transform log file to dataframe '''
     log_messages = []
     linecount = 0
-    with open(log_file, 'r') as fin:
+    with open(log_file, 'rb') as fin:
         for line in fin.readlines():
+            line = line.decode(errors='replace')
             try:
                 match = regex.search(line.strip())
                 message = [match.group(header) for header in headers]

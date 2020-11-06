@@ -412,14 +412,14 @@ class LogParser:
         eventID_template = {event.eventId : ' '.join(event.eventStr) for event in self.eventsL}
         eventList = [[event.eventId, ' '.join(event.eventStr), event.eventCount] for event in self.eventsL]
         eventDf = pd.DataFrame(eventList, columns=['EventId', 'EventTemplate', 'Occurrences'])
-        eventDf.to_csv(os.path.join(self.para.savePath, self.logname + '_templates.csv'), index=False)
+        eventDf.to_csv(os.path.join(self.para.savePath, self.logname + '_CT_' + str(self.para.CT)  + '_templates.csv'), index=False)
 
         self.output.sort(key=lambda x: int(x[0]))
         self.df_log['EventId'] = [str(logL[1]) for logL in self.output]
         self.df_log['EventTemplate'] = [eventID_template[logL[1]] for logL in self.output]
         if self.keep_para:
             self.df_log["ParameterList"] = self.df_log.apply(self.get_parameter_list, axis=1) 
-        self.df_log.to_csv(os.path.join(self.para.savePath, self.logname + '_structured.csv'), index=False)
+        self.df_log.to_csv(os.path.join(self.para.savePath, self.logname + '_CT_' + str(self.para.CT) + '_structured.csv'), index=False)
 
     """
     For 1-M and M-1 mappings, you need to decide whether M side are constants or variables. This method is to decide which side to split
@@ -592,9 +592,10 @@ class LogParser:
         """
         log_messages = []
         linecount = 0
-        with open(log_file, 'r') as fin:
+        with open(log_file, 'rb') as fin:
             for line in fin.readlines():
                 try:
+                    line = line.decode(errors='replace')
                     match = regex.search(line.strip())
                     message = [match.group(header) for header in headers]
                     log_messages.append(message)

@@ -43,7 +43,7 @@ class LogLoader(object):
         """
         print('Loading log messages to dataframe...')
         lines = []
-        with open(log_filepath, 'r') as fid:
+        with open(log_filepath, 'rb') as fid:
             lines = fid.readlines()
         
         log_messages = []
@@ -89,7 +89,7 @@ class LogLoader(object):
 def formalize_message(enumerated_lines, regex, headers):
     log_messages = []
     for line_count, line in enumerated_lines:
-        line = line.strip()
+        line = line.decode(errors='replace').strip()
         if not line:
             continue
         line = re.sub(r'[^\x00-\x7F]+', '<N/ASCII>', line)
